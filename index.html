@@ -300,7 +300,7 @@
       
         
           
-            <h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>常量就相当于数学中常数。分为以下6种：</p>
+            <h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>常量就相当于数学中常数。在Java中，声明常量要用<code>final</code>关键字，并且常量名哟啊大写，可以用<code>public static final</code>声明一个类常量，它在任何情况下都可以使用。分为以下6种：</p>
 <ul>
 <li>字符串常量</li>
 <li>整型常量</li>
@@ -309,7 +309,16 @@
 <li>bool型常量 true和false</li>
 <li>空常量 null 不能直接打印</li>
 </ul>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量就是可以改变的量，它的名字就是标识符</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量就是可以改变的量，它的名字就是标识符，驼峰。变量需要先声明，再赋值，且必须赋值后才能使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a = 1;</span><br><span class="line">String str = &quot;hello&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>变量需要注意的地方</strong></p>
+<ol>
+<li>如果创建多个变量，变量名不可重复</li>
+<li>对于float\double\long 不要省略它们的后缀</li>
+<li>使用基本数据类型，不能超过它们所表示的范围</li>
+<li>没有进行赋值的变量不能直接使用</li>
+<li>变量使用不能超过作用域</li>
+</ol>
 <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>java是一种强类型语言，这就意味着必须为每一个变量声明类型。</p>
 <h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><p>基本数量类型有4类8种</p>
 <h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><p>就是整数，默认为int。二进制以0b开头，八进制以0开头（不推荐使用，容易混淆），十六进制以0X开头。他们的取值范围就是-2^(占多少位-1)~2^(占多少位-1-1)，如byte的取值范围为-128~127。</p>
@@ -337,7 +346,7 @@
 <li>浮点数可能是一个近似值而非精确值</li>
 <li>数据范围和占的内存没关系，比如float比long表示的范围更广</li>
 </ol>
-
+<h2 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h2>
           
         
       
